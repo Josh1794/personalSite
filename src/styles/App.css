@@ -12,19 +12,41 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-header1 {
+  background-color: darkgrey;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+}
 
 .title {
   color: orange;
   font-weight: bold;
   font-size: 30pt;
 }
-.navBar {
+.navBar div {
+  text-align: center;
+  color: white;
+  padding: 14px;
+}
+.navBar div:hover {
+  text-align: center;
+  color: orange;
+  cursor: pointer;
+  padding: 14px;
+}
+
+nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  position: sticky;
-  height: 40px;
-  color: white;
-  background-color: darkgray;
-  align-items: center;
+  background-color: gray;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
 }

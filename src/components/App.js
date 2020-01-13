@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "./Nav";
-import Title from "./Title";
+import Body from "./Body";
 import "../styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Title />
+      <Nav className="nav" />
+      <Body />
     </div>
   );
 }
