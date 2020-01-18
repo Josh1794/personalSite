@@ -3,7 +3,6 @@ import "../styles/App.css";
 
 export default function Title() {
   const title = document.querySelectorAll("#title path");
-  console.log(title);
   for (let i = 0; i < title.length; i++) {
     console.log(`Letter ${i} is ${title[i].length}`);
   }
@@ -12,7 +11,7 @@ export default function Title() {
       <header>
         <svg
           id="title"
-          width="982"
+          width="75vw"
           height="110"
           viewBox="0 0 982 110"
           fill="none"
@@ -104,7 +103,7 @@ export default function Title() {
           />
         </svg>
 
-        <p>Welcome to my website</p>
+        <p id="subHeader">Fullstack Software Engineer</p>
       </header>
     </div>
   );

@@ -1,15 +1,13 @@
 import React from "react";
 import Title from "./Title";
-import Test from "./Test";
+import About from "./About";
 import "../styles/App.css";
 
-function Body() {
+export default function Body() {
   return (
     <div>
       <Title />
-      <Test />
+      <About />
     </div>
   );
 }
-
-export default Body;

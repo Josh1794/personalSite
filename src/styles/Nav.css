@@ -1,0 +1,11 @@
+.navBar {
+  background-color: rgb(80, 80, 80);
+  height: 45px;
+  opacity: 85%;
+}
+
+.NavBrand :any-link {
+  font-weight: bolder;
+  font-size: 18pt;
+  text-decoration: none;
+}

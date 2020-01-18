@@ -1,14 +1,35 @@
-import React from "react";
-import Nav from "./Nav";
-import Body from "./Body";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Spinner } from "react-bootstrap";
+import Navigation from "./Navigation";
 import "../styles/App.css";
+
+const Home = lazy(() => import("./Home"));
+const Portfolio = lazy(() => import("./Portfolio"));
+const Contact = lazy(() => import("./Contact"));
+
+// const Resume = lazy(() => import("./Resume"));
 
 function App() {
   return (
-    <div className="App">
-      <Nav className="nav" />
-      <Body />
-    </div>
+    <Router>
+      <Navigation />
+      <Suspense
+        fallback={
+          <div>
+            Loading...
+            <Spinner animation="border" variant="warning" />
+          </div>
+        }
+      >
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/Portfolio" component={Portfolio} />
+          <Route path="/Contact" component={Contact} />
+          {/* <Route path="/Resume"/ component={Resume}> */}
+        </Switch>
+      </Suspense>
+    </Router>
   );
 }
 
