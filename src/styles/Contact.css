@@ -1,0 +1,14 @@
+.contactPage {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.contactPage div {
+  width: 75vw;
+}
+.form-control {
+  width: 70vw;
+}

@@ -16,8 +16,8 @@ function App() {
       <Navigation />
       <Suspense
         fallback={
-          <div>
-            Loading...
+          <div className="fallbackLoader">
+            Loading
             <Spinner animation="border" variant="warning" />
           </div>
         }
@@ -26,7 +26,6 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/Portfolio" component={Portfolio} />
           <Route path="/Contact" component={Contact} />
-          {/* <Route path="/Resume"/ component={Resume}> */}
         </Switch>
       </Suspense>
     </Router>
