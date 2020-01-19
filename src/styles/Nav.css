@@ -6,6 +6,18 @@
 
 .NavBrand :any-link {
   font-weight: bolder;
-  font-size: 18pt;
+  font-size: calc(12px + 1vmin);
   text-decoration: none;
+}
+
+.navLinks {
+  font-size: calc(8px + 1vmin);
+}
+
+#mobileModal {
+  position: relative;
+  left: 25px;
+  top: 70px;
+  width: 300px;
+  height: 600px;
 }

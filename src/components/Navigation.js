@@ -1,81 +1,35 @@
 import React from "react";
-import { Navbar, Nav, Container, Modal, Button } from "react-bootstrap";
+import MobileNav from "./mobileNav";
+import NormalNav from "./normalNav";
 import "../styles/Nav.css";
 
 export default class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.scrollWin = this.scrollWin.bind(this);
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-  }
   state = {
-    show: false
+    width: window.innerWidth
   };
 
-  scrollWin(e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: 900,
-      behavior: "smooth"
-    });
+  componentDidMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
   }
 
-  handleClose() {
-    this.setState({ show: false });
+  // make sure to remove the listener
+  // when the component is not mounted anymore
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleWindowSizeChange);
   }
-  handleShow() {
-    this.setState({ show: true });
-  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
 
   render() {
-    return (
-      <div>
-        <Navbar fixed="top" className="navBar">
-          <Container className="navContainer">
-            <Navbar.Brand href="/" className="NavBrand">
-              Joshua Grossman
-            </Navbar.Brand>
-            <Nav className="navLinks">
-              <Nav.Link href="Portfolio">Portfolio</Nav.Link>
-              <Nav.Link onClick={this.handleShow}>Resume</Nav.Link>
-              <Nav.Link onClick={this.scrollWin}>About me</Nav.Link>
-              <Nav.Link href="Contact">Contact Me</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
+    const { width } = this.state;
+    const isMobile = width <= 500;
 
-        <Modal
-          autoFocus={true}
-          show={this.state.show}
-          onHide={this.handleClose}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>Joshua Grossman's Resume</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <div>
-              <iframe
-                src="https://drive.google.com/file/d/1YtYsYM6FEHskBKUzoZZK8_qgTt1q-NzJ/preview"
-                width="475px"
-                height="600px"
-                title="My Resume"
-              ></iframe>
-            </div>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
-            <Button
-              variant="success"
-              href="https://drive.google.com/file/d/1YtYsYM6FEHskBKUzoZZK8_qgTt1q-NzJ/view"
-            >
-              Download
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
-    );
+    if (isMobile) {
+      return <MobileNav />;
+    } else {
+      return <NormalNav />;
+    }
   }
 }
