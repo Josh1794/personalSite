@@ -38,7 +38,6 @@ export default class NormalNav extends React.Component {
             <Nav className="navLinks">
               <Nav.Link href="Portfolio">Portfolio</Nav.Link>
               <Nav.Link onClick={this.handleShow}>Resume</Nav.Link>
-              <Nav.Link onClick={this.scrollWin}>About me</Nav.Link>
               <Nav.Link href="Contact">Contact Me</Nav.Link>
             </Nav>
           </Container>
