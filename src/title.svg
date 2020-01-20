@@ -1,24 +1,4 @@
-import React from "react";
-import { Button } from "react-bootstrap";
-import "../styles/Title.css";
-
-export default class Title extends React.Component {
-  constructor(props) {
-    super(props);
-    this.scrollUp = this.scrollUp.bind(this);
-  }
-  scrollUp(e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: 1000,
-      behavior: "smooth"
-    });
-  }
-  render() {
-    return (
-      <div className="App-header">
-        <header>
-          <svg
+   <svg
             id="title"
             width="75vw"
             height="110"
@@ -111,13 +91,3 @@ export default class Title extends React.Component {
               mask="url(#path-1-outside-1)"
             />
           </svg>
-        </header>
-        <br />
-        <p id="subHeader">Fullstack Software Engineer</p>
-        <Button onClick={this.scrollUp} className="scrollUp">
-          <i class="fas fa-chevron-down"></i>
-        </Button>
-      </div>
-    );
-  }
-}
