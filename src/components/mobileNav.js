@@ -30,7 +30,7 @@ export default class MobileNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar fixed="top" className="navBar">
+        <Navbar fixed="top" className="navBar" bg="dark" variant="light">
           <Container className="navContainer">
             <Nav className="navLinks">
               <Nav.Link href="/">Home</Nav.Link>

@@ -1,7 +1,6 @@
 import React from "react";
 import MobileNav from "./mobileNav";
 import NormalNav from "./normalNav";
-import "../styles/bootstrap.min.css";
 import "../styles/Nav.css";
 
 export default class Navigation extends React.Component {

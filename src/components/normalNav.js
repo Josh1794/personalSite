@@ -30,7 +30,7 @@ export default class NormalNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar fixed="top" className="navBar">
+        <Navbar fixed="top" className="navBar" bg="dark" variant="light">
           <Container className="navContainer">
             <Navbar.Brand href="/" className="NavBrand">
               Joshua Grossman
