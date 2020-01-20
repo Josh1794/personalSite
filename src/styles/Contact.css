@@ -7,8 +7,23 @@
   min-height: 100vh;
 }
 .contactPage div {
-  width: 75vw;
+  width: 50vw;
 }
 .form-control {
   width: 70vw;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactPage h4 {
+  margin-left: 10px;
+}
+
+#social h2 {
+  padding-right: 40px;
+  position: relative;
+  left: 15px;
 }

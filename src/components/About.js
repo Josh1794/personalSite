@@ -45,7 +45,7 @@ class About extends React.Component {
           <li>React-Native</li>
         </ul>
         <Button onClick={this.scrollUp} className="scrollUp">
-          <div>{" ^ "}</div>
+          <i class="fas fa-chevron-up"></i>
         </Button>
       </header>
     );

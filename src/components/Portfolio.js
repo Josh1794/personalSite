@@ -4,49 +4,45 @@ import { Carousel } from "react-bootstrap";
 
 export default function Portfolio() {
   return (
-    <div className="Portfolio">
-      <Carousel className="Carousel">
+    <div className="portfolioOne">
+      <Carousel>
         <Carousel.Item>
-          <img
-            height="300px"
-            max-width="300px"
-            className="d-block w-100"
-            src="http://www.xtremelimocincy.com/wp-content/uploads/2018/01/img-placeholder-square-300x300.jpg"
-            alt="First slide"
-          />
+          <a href="https://github.com/thunky-monks/graceshopper">
+            <img className="d-block w-100" src="cart.png" alt="First slide" />
+          </a>
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>E-Commerce-Commerce</h3>
+            <p>A Sample e-commerce website</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            height="300px"
-            max-width="300px"
-            className="d-block w-100"
-            src="http://www.xtremelimocincy.com/wp-content/uploads/2018/01/img-placeholder-square-300x300.jpg"
-            alt="Second slide"
-          />
+          <a href="https://github.com/Josh1794/myWeatherApp">
+            <img
+              className="d-block w-100"
+              src="Weather-icon.png"
+              alt="Second slide"
+            />
+          </a>
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            height="300px"
-            max-width="300px"
-            className="d-block w-100"
-            src="http://www.xtremelimocincy.com/wp-content/uploads/2018/01/img-placeholder-square-300x300.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>My Weather App</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              A well designed React Native Weather app using OpenWeather API
             </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <a href="https://github.com/Thunkaroos/YellowBrickRoad">
+            <img
+              className="d-block w-100"
+              src="yellowBrickRoad.jpg"
+              alt="Third slide"
+            />
+          </a>
+
+          <Carousel.Caption>
+            <h3>Yellow Brick Road</h3>
+            <p>An AR Tour Guide app</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

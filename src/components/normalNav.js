@@ -66,12 +66,11 @@ export default class NormalNav extends React.Component {
             <Button variant="secondary" onClick={this.handleClose}>
               Close
             </Button>
-            <Button
-              variant="success"
-              href="https://drive.google.com/file/d/1YtYsYM6FEHskBKUzoZZK8_qgTt1q-NzJ/view"
-            >
-              Download
-            </Button>
+            <a href="Joshua Grossman's Resume.pdf" download>
+              <Button variant="success">
+                <i class="fas fa-file-download"></i> Download
+              </Button>
+            </a>
           </Modal.Footer>
         </Modal>
       </div>
