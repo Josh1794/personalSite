@@ -1,4 +1,6 @@
 .contactPage {
+  background-image: url(../background.svg);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   position: relative;

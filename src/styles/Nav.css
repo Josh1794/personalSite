@@ -1,7 +1,6 @@
 .navBar {
-  background-color: rgb(80, 80, 80);
-  height: 45px;
-  opacity: 85%;
+  background-color: #222222;
+  height: 40px;
 }
 
 .NavBrand :any-link {

@@ -30,13 +30,7 @@ export default class NormalNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar
-          collapseOnSelect
-          expand="lg"
-          fixed="top"
-          bg="dark"
-          variant="dark"
-        >
+        <Navbar className="navBar" collapseOnSelect expand="lg" fixed="top">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Navbar.Brand href="/" className="NavBrand">

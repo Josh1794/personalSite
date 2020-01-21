@@ -1,5 +1,8 @@
 .App-header {
-  background-color: gray;
+  background-image: url(../background.svg);
+  background-repeat: no-repeat;
+
+  /* background-color: gray; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +13,7 @@
 }
 
 #subHeader {
+  color: darkgray;
   text-align: center;
   font-size: calc(8px + 2vmin);
 }
