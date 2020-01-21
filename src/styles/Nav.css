@@ -1,7 +1,10 @@
 .navBar {
-  color: white;
   background-color: #222222;
   height: 40px;
+}
+
+.navBar:hover {
+  color: orange;
 }
 
 .NavBrand :any-link {
