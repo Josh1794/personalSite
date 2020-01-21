@@ -40,6 +40,17 @@ export default function Contact() {
               </a>
             </OverlayTrigger>
           </h2>
+          <h2>
+            <OverlayTrigger
+              placement="bottom"
+              delay={{ show: 200, hide: 400 }}
+              overlay={stackTooltop}
+            >
+              <a href="https://stackoverflow.com/users/12751027/josh?tab=profile">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+            </OverlayTrigger>
+          </h2>
         </div>
       </Jumbotron>
     </div>
@@ -52,4 +63,8 @@ function gitHubTooltip(props) {
 
 function linkedinTooltop(props) {
   return <Tooltip {...props}>LinkedIn Profile</Tooltip>;
+}
+
+function stackTooltop(props) {
+  return <Tooltip {...props}>Stack Overflow Profile</Tooltip>;
 }
