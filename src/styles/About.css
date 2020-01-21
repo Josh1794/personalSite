@@ -30,7 +30,7 @@
   background-color: whitesmoke;
   border-radius: 2%;
   width: 75vw;
-  height: 550px;
+  height: 500px;
   align-self: center;
   justify-content: center;
 }
@@ -64,7 +64,7 @@
   font-size: 40pt;
   align-self: center;
   position: relative;
-  top: 30px;
+  top: 80px;
   border-radius: 100%;
   color: white;
   background-color: rgb(97, 97, 97);
