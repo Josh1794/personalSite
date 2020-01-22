@@ -33,8 +33,8 @@ class About extends React.Component {
       >
         <div className="App-header2">
           <Image
-            height="90px"
-            width="90px"
+            height="50vh"
+            width="50vw"
             src="profilepic.jpg"
             roundedCircle
           />

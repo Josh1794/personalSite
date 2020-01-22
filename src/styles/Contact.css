@@ -22,7 +22,8 @@
 }
 
 .contactPage h4 {
-  margin-left: 10px;
+  margin-left: 5px;
+  font-size: calc(8px + 2vmin);
 }
 
 #social h2 {
