@@ -11,7 +11,7 @@ export default function Portfolio() {
             <img className="d-block w-100" src="cart.png" alt="First slide" />
           </a>
           <Carousel.Caption>
-            <h3>E-Commerce-Commerce</h3>
+            <h5>E-Commerce-Commerce</h5>
             <p>A Sample e-commerce website</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -25,10 +25,8 @@ export default function Portfolio() {
           </a>
 
           <Carousel.Caption>
-            <h3>My Weather App</h3>
-            <p>
-              A well designed React Native Weather app using OpenWeather API
-            </p>
+            <h5>My Weather App</h5>
+            <p>A React Native Weather app using OpenWeather API</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -41,7 +39,7 @@ export default function Portfolio() {
           </a>
 
           <Carousel.Caption>
-            <h3>Yellow Brick Road</h3>
+            <h5>Yellow Brick Road</h5>
             <p>An AR Tour Guide app</p>
           </Carousel.Caption>
         </Carousel.Item>
