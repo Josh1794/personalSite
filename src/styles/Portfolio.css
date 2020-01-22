@@ -1,13 +1,11 @@
 .portfolioOne {
-  display: flex;
-  flex-direction: column;
   background-color: darkgray;
-  height: 100vh;
-  justify-content: center;
 }
 
-.carousel-item {
-  width: 50vw;
+.carousel-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel-caption {
