@@ -5,7 +5,9 @@
   height: 100vh;
   justify-content: center;
 }
-
+.carousel-inner {
+  align-content: center;
+}
 .carousel-item {
   width: 50vw;
 }
