@@ -8,8 +8,6 @@ const Home = lazy(() => import("./Home"));
 const Portfolio = lazy(() => import("./Portfolio"));
 const Contact = lazy(() => import("./Contact"));
 
-// const Resume = lazy(() => import("./Resume"));
-
 function App() {
   return (
     <Router>
