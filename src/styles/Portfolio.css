@@ -5,17 +5,11 @@
   height: 100vh;
   justify-content: center;
 }
-.carousel-inner {
-  align-content: center;
-}
+
 .carousel-item {
   width: 50vw;
 }
 
 .carousel-caption {
   font-size: 1vw;
-}
-
-.w-100 {
-  align-content: center;
 }
