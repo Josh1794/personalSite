@@ -8,7 +8,7 @@ const Home = lazy(() => import("./Home"));
 const Portfolio = lazy(() => import("./Portfolio"));
 const Contact = lazy(() => import("./Contact"));
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Navigation />
@@ -29,5 +29,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
