@@ -28,7 +28,6 @@ export default function Contact() {
               </a>
             </OverlayTrigger>
           </h2>
-
           <h2>
             <OverlayTrigger
               placement="bottom"
