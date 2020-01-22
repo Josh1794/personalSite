@@ -1,12 +1,12 @@
 .portfolioOne {
   background-color: darkgray;
-  height: 90vh;
 }
 
 .carousel-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .carousel-caption {
