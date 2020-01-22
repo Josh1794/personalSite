@@ -1,7 +1,8 @@
 .App-header {
-  background-image: url(../background.svg);
+  background-image: url(../background.svg),
+    url(../blue-and-purple-cosmic-sky-956999.jpg);
   background-repeat: no-repeat;
-  background-color: darkgray;
+  background-size: auto, cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
