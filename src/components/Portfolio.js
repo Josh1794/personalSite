@@ -4,8 +4,8 @@ import { Carousel } from "react-bootstrap";
 
 export default function Portfolio() {
   return (
-    <div className="portfolioOne">
-      <Carousel>
+    <div>
+      <Carousel className="portfolioOne">
         <Carousel.Item>
           <a href="https://github.com/thunky-monks/graceshopper">
             <img className="d-block w-100" src="cart.png" alt="First slide" />

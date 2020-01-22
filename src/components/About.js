@@ -51,7 +51,7 @@ class About extends React.Component {
             position where I can continue to grow and improve as a developer. I
             hope to incorporate my passion for sustainability into my
             development work. Feel free to check out some of my sample projects
-            linked below or reach out to me on LinkeIn or with my contact
+            in my portfolio or reach out to me on LinkeIn or with my contact
             information. I look forward to hearing from you!
           </p>
           <p id="aboutMeBody">
